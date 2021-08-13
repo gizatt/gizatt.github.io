@@ -1,12 +1,11 @@
 ### your site title here
 
-title: Your Name
-description: subtitle | affiliations | motto
+title: Greg Izatt
+description: Grad Student | MIT CSAIL | Robotics
 
-baseurl: /gradfolio #name of GitHub repository
+baseurl: /gizatt.github.io #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
-email: #
-
+email: gizatt at mit dot edu #
 
 highlighter: rouge
 markdown: kramdown
