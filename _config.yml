@@ -3,7 +3,7 @@
 title: Greg Izatt
 description: Grad Student | MIT CSAIL | Robotics
 
-baseurl: /gizatt.github.io #name of GitHub repository
+baseurl: / #postpends github.io, i.e. <username>.github.io/<baseurl>/<page>/<...>
 url: "" #custom url to be used instead of GitHub repository
 email: gizatt at mit dot edu #
 
