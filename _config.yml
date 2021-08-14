@@ -27,7 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  gizatt
 
 # Build settings
-theme: bulma-clean-theme
+#theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 #plugins:
   #- jekyll-feed
@@ -51,3 +51,12 @@ remote_theme: chrisrhymes/bulma-clean-theme
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      hero_image: "/assets/hero.png"
+      hero_height: is-fullwidth # is-medium
+      hero_darken: true
