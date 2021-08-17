@@ -1,7 +1,4 @@
 - name: Projects
   link: "#projects"
-  dropdown:
-    - name: Example Project
-      link: /projects/test_project
 - name: Publications
   link: "#publications"

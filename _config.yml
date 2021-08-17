@@ -29,6 +29,7 @@ github_username:  gizatt
 # Build settings
 #theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
+fixed_navbar: top
 #plugins:
   #- jekyll-feed
 
@@ -60,7 +61,11 @@ sass:
 collections:
   publications:
     sort_by: date
-
+  projects:
+    sort_by: date
+    output: true
+    permalink: /projects/:path/
+    
 defaults:
   -
     scope:
