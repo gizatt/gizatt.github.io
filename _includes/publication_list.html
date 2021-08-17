@@ -1,0 +1,16 @@
+<section>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <ul>
+    {% for pub in site.publications reversed %}
+    <div class="row-container" display="block">
+        <div class="col-container" style="float: left; margin-right: 3em">
+            <p><img src='{{pub.image}}' width=200px></p>
+        </div>
+        <div class="col-container" style="overflow: hidden">
+            <p>{{pub.text}}</p>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+    </ul>
+</section>

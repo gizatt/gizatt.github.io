@@ -1,0 +1,16 @@
+---
+---
+@import "main";
+
+.row-container {
+    display: table-layout; /* Make the container element behave like a table */
+    width: 100%;
+    word-wrap: break-word;
+    overflow:hidden;
+    height:1%;
+}
+.col-container {
+    display: table-cell; /* Make the container element behave like a table */
+    word-wrap: break-word;
+    height: 100%;
+}

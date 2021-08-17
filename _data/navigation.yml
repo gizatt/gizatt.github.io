@@ -1,7 +1,7 @@
 - name: Projects
-  link: /projects
+  link: "#projects"
   dropdown:
     - name: Example Project
       link: /projects/test_project
 - name: Publications
-  link: /publications
+  link: "#publications"
