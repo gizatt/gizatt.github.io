@@ -13,11 +13,15 @@ I'm a graduate student with [Russ Tedrake](http://groups.csail.mit.edu/locomotio
 
 My research has broadly focused on the *interplay of perception and simulation in robot manipulation*. I've used simulation for many things, like testing Atlas' walking behaviors during the DRC; prototyping perception and control systems for the MIT Hyperloop vehicle before its test flight; or putting robot arm code used by my lab under CI. But simulation can be so much more than that -- in my PhD, I'm wrangling with some fundamental questions about how we can better align simulation to reality in a high-level way -- how we can capture the distribution of real worlds our robots will face, and reproduce that distribution in sim.
 
+---
+
 # Projects
 
 Not all publications are listed here; these are just some highlights. See below for my full list of publications.
 
 {% include project_list.html %}
+
+---
 
 # Publications
 
