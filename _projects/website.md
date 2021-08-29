@@ -7,6 +7,7 @@ show_sidebar: false
 card_image: assets/website.png
 card_image_alt: Project image.
 date: 20210810
+hide: True
 ---
 
 I made this website, which is kind of neat.

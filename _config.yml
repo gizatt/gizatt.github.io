@@ -53,6 +53,9 @@ fixed_navbar: top
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Following http://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html
+markdown: kramdown
+
 sass:
     load_paths:
         - _sass

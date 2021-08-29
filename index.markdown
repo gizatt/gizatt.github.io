@@ -17,7 +17,7 @@ My research has broadly focused on the *interplay of perception and simulation i
 
 # Projects
 
-Not all publications are listed here; these are just some highlights. See below for my full list of publications.
+Not all publications are listed here; these are just some recent highlights, including personal projects not reflected as publications. See below for my full list of publications.
 
 {% include project_list.html %}
 

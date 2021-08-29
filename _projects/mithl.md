@@ -1,7 +1,7 @@
 ---
 title: MIT Hyperloop Team
 subtitle: Software lead for MIT's Hyperloop pod in the 2017 SpaceX Hyperloop competition.
-layout: default
+layout: page
 hide_hero: true
 show_sidebar: false
 card_image: assets/mithl.jpeg
