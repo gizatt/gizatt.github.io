@@ -22,10 +22,8 @@ My PhD project focuses on figuring out the tooling to capture a probability dist
 
 2) Use $$p(world)$$ as an outlier detector: when a robot encounters a new world $$world_{new}$$, evaluate the density $$p(world_{new})$$. If that density is abnormally low, then it knows it wasn't trained on worlds like this (and it should be wary!). The tools I use can even tell you what *part* of the world is surprising.
 
-# Why is this useful?
+# Approach and aims
 
+The above problem is almost absurdly broad; I'm exploring one of many possible avenues for tackling this problem. Specifically, I'm looking at using *scene grammars* as a representation for this distribution over worlds.
 
-
-# Aims
-
-1) Spike test *scene grammars* as a nice 
+*Scene grammars* are a form of procedural model that supposes that 
