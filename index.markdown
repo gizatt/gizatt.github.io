@@ -9,7 +9,7 @@ show_sidebar: false
 
 # Contacts and pages
 
-**Email:** ```gizatt dot csail dot mit dot edu```
+**Email:** ```gizatt at csail dot mit dot edu```
 
 **Github**: [github.com/gizatt](https://github.com/gizatt)
 
