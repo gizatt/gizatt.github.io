@@ -23,6 +23,8 @@ Our design goal was to build a rail-riding, passive maglev transportation pod th
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U12rGwQfNb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
+---
+
 <center><h2>Details</h2></center>
 Our design goal was to build a passively-magnetically-levitated transportation pod compatible with a mile-long rail inside a mile-long vacuum chamber outside of SpaceX's headquarters in Hawthorne, CA, and to have it autonomously fly from one end of the track to the other as fast as possible. The project wound up involving immensely complex maglev, aero, and suspension design that put our huge team to work. But that hidden word "autonomously" gave me personally a pile of trouble; see our design report, linked below, for a look at the details of how we made it all work out.
 
@@ -30,10 +32,14 @@ Due to the team's hard work, our pod design -- which relied on passive magnetic 
 
 The video above is from a GoPro under the front of our pod from our run, embedded into my flight monitoring and control GUI. While we weren't allowed to fly at our design speed of ~250mph (no one was allowed to do so that year for reasons outside our control), we demonstrated that our vehicle was safe and stable at 60mph (still pretty fast!). The data (from O(50) sensors total) verified our design, lined up with our sims, and was generally a huge success.
 
+---
+
 <center><h2>Media Coverage</h2></center>
 For stories about the team, check out some media coverage we got:
 - [MIT News](https://news.mit.edu/2017/safe-at-any-speed-mit-hyperloop-0214)
 - [Tech Review](https://www.technologyreview.com/2016/10/18/156745/the-hyperloop-pod-squad/)
+
+---
 
 <center><h2>Report and Code</h2></center>
 

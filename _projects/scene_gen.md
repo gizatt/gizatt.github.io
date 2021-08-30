@@ -22,6 +22,8 @@ My PhD project focuses on figuring out the tooling to capture a probability dist
 
 2) Use $$p(world)$$ as an outlier detector: when a robot encounters a new world $$world_{new}$$, evaluate the density $$p(world_{new})$$. If that density is abnormally low, then it knows it wasn't trained on worlds like this (and it should be wary!). The tools I use can even tell you what *part* of the world is surprising.
 
+---
+
 <center><h2>Scene grammars</h2></center>
 
 The above problem is almost absurdly broad; I'm exploring one of many possible avenues for tackling this problem. Specifically, I'm looking at using *scene grammars* as a representation for this distribution over worlds.
@@ -35,6 +37,7 @@ The above problem is almost absurdly broad; I'm exploring one of many possible a
 
 While scene grammars are (intentionally) limited in the scene structures they can describe, they're remarkably flexible! My work at ICRA 2020 ([paper](http://groups.csail.mit.edu/robotics-center/public_papers/Izatt20.pdf), [talk](https://youtu.be/Ilt8tqEnM50)) showed that I can parameterize these grammars and align those parameters to an observed dataset of scenes to do "distribution matching" -- i.e., make my grammar produce scenes that look, as much as possible, like real scenes.
 
+---
 
 <center><h2>Contributions and active problems</h2></center>
 
