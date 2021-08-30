@@ -7,7 +7,18 @@ show_sidebar: false
 
 ---
 
-# About
+# Contacts and pages
+
+**Email:** ```gizatt dot csail dot mit dot edu```
+
+**Github**: [github.com/gizatt](https://github.com/gizatt)
+
+**Scholar**: [Google Scholar profile](https://scholar.google.com/citations?user=BFfjA-8AAAAJ&hl=en)
+
+
+---
+
+# About me
 
 I'm a graduate student with [Russ Tedrake](http://groups.csail.mit.edu/locomotion/russt.html) at the [Robot Locomotion Group](http://groups.csail.mit.edu/locomotion/) at MIT CSAIL. I've tackled robotic control, perception, and simulation problems from a variety of angles, and have an eclectic toolbox spanning from bare-metal embedded electronics hacking to mixed-integer formulations of perception and inference problems (with a lot of neat stuff in between).
 
