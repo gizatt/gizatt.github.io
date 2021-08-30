@@ -24,6 +24,8 @@
 // and https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 .card_box{    
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap:wrap; 
   flex-direction: row;
 }
