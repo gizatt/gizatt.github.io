@@ -69,6 +69,10 @@ collections:
     output: true
     permalink: /projects/:path/
     
+exclude:
+  - DEVELOP.md
+  - '*.sh'
+
 defaults:
   -
     scope:
