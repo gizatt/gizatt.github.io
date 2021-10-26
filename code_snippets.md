@@ -15,3 +15,7 @@ Dry run:
 Actually do it:
 `find . -iname "*.py" -exec sed -i 's/WorldBBoxRule/WorldFrameBBoxRule/g' {} \;`
 
+## [Watch the most recent log file](https://unix.stackexchange.com/questions/83962/tail-f-the-most-recent-log-file)
+```
+tail -f `/bin/ls -1td /path/to/logfile/**| /usr/bin/head -n1`
+```
