@@ -43,5 +43,5 @@ For stories about the team, check out some media coverage we got:
 
 <center><h2>Report and Code</h2></center>
 
-- The team put together an [in-depth design report](http://hyperloop.mit.edu/uploads/7/6/1/8/76180385/mithyperloop_finalreport_2017_public.pdf) covering all aspects of our design.
+- The team put together an [in-depth design report]({{site.baseurl}}/assets/MITHyperloop_FinalReport_2017_public.pdf) covering all aspects of our design.
 - The core software is available at [github.com/MITHyperloopTeam/software_core](https://github.com/MITHyperloopTeam/software_core).
