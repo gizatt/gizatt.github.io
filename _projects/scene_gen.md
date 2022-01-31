@@ -1,5 +1,5 @@
 ---
-title: "PhD Project: Scene Generation"
+title: "PhD Project: Spatial Scene Grammars"
 subtitle: Capturing distributions over environments to help robots and their designers understand the challenges they'll face.
 layout: page
 hide_hero: true
@@ -10,32 +10,36 @@ date: 20210829
 usemathjax: true
 ---
 <center>
-<h1>{{page.title}}</h1>
+<h1>PhD Thesis: Capturing Distributions over Worlds for Robotics with Spatial Scene Grammars</h1>
 <h5>{{page.subtitle}}</h5>
 <h5><a href="https://github.com/gizatt/spatial_scene_grammars">github.com/gizatt/spatial_scene_grammars</a> [WIP!]</h5>
-<img src="{{site.baseurl}}/assets/phd/demo_rooms.gif" alt="Gif of diverse kitchens being generated" border="10" />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vb7klk2Z2rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-My PhD project focuses on figuring out the tooling to capture a probability distribution $$p(world)$$ of real-world environments. Capturing a distribution over worlds is, at its core, a hard problem because it involves capturing a distribution over a mixed discrete and continuous distribution: specifically, how many objects of a given type are in a scene, and where those objects are, covary with each other in complex ways. If we could capture this distribution, we could:
+My PhD project focuses on figuring out the tooling to **capture a probability distribution $p(world)$ of real-world environments**. Capturing a distribution over worlds is, at its core, a hard problem because it involves capturing a distribution over a mixed discrete and continuous distribution: specifically, how many objects of a given type are in a scene, and where those objects are, covary with each other in complex ways. If we could capture this distribution, we could:
 
-1) Sample from $$p(world)$$ to generate tons of diverse, realistic, interesting environments to thoroughly test our perception and control algorithms in simulation (or for making game environments, or for quickly generating realistic backdrops in movies, etc...)
+1. **Sample from $p(world)$ to generate tons of diverse, realistic, interesting environments** to thoroughly test our perception and control algorithms in simulation (or for making game environments, or for quickly generating realistic backdrops in movies, etc...).
 
-2) Use $$p(world)$$ as an outlier detector: when a robot encounters a new world $$world_{new}$$, evaluate the density $$p(world_{new})$$. If that density is abnormally low, then it knows it wasn't trained on worlds like this (and it should be wary!). The tools I use can even tell you what *part* of the world is surprising.
+2. **Use $p(world)$ to do inference.** This can take the form of outlier detection; reasoning about likely underlying or hidden structure in an observed world; or model parameter estimation to align our modeled distribution to reality.
 
 ---
 
-<center><h2>Scene grammars</h2></center>
+<center><h2>Spatial Scene Grammars</h2></center>
+
+<center>
+<img src="{{site.baseurl}}/assets/phd/demo_rooms.gif" alt="Gif of diverse kitchens being generated" border="10" />
+</center>
 
 The above problem is almost absurdly broad; I'm exploring one of many possible avenues for tackling this problem. Specifically, I'm looking at using *scene grammars* as a representation for this distribution over worlds.
 
-*Scene grammars* are a form of procedural model that suppose that objects belong to a single "parent" object -- where the parent could be another actual object (like a cup on a table), or some abstract grouping of objects (like a plate belonging to a stack of plates). This grammar dictates probabilistic relationships between parents and children: how many cups tend to appear on tables, and where on that table those cups tend to appear. A draw from a scene grammar is a *scene tree*, which describes that set of hierarchical relationships in the scene.
+In the course of my thesis, I develop a custom class of *spatial scene grammars* to describe the spatial distribution of varying numbers of objects from a set of known classes. Scene grammars are a form of procedural model that suppose that objects belong to a single "parent" object -- where the parent could be another actual object (like a cup on a table), or some abstract grouping of objects (like a plate belonging to a stack of plates). This grammar dictates probabilistic relationships between parents and children: how many cups tend to appear on tables, and where on that table those cups tend to appear. A draw from a scene grammar is a *scene tree*, which describes that set of hierarchical relationships in the scene.
 
 <figure>
   <img src="{{site.baseurl}}/assets/icra_2020.png" alt="Scenes generated from scene grammars."/>
   <figcaption>Some scenes drawn from a scene grammar that describes how objects are hierarchically grouped into place settings on a table, or mugs on a level of a rack. The tree structure overlayed on the scene reflects a *scene tree* that produced the scene.</figcaption>
 </figure>
 
-While scene grammars are (intentionally) limited in the scene structures they can describe, they're remarkably flexible! My work at ICRA 2020 ([paper](http://groups.csail.mit.edu/robotics-center/public_papers/Izatt20.pdf), [talk](https://youtu.be/Ilt8tqEnM50)) showed that I can parameterize these grammars and align those parameters to an observed dataset of scenes to do "distribution matching" -- i.e., make my grammar produce scenes that look, as much as possible, like real scenes.
+While scene grammars are (intentionally) limited in the scene structures they can describe, they're remarkably flexible! My work at ICRA 2020 ([paper](http://groups.csail.mit.edu/robotics-center/public_papers/Izatt20.pdf), [talk](https://youtu.be/Ilt8tqEnM50)) showed that I can parameterize these grammars and align those parameters to an observed dataset of scenes to do "distribution matching" -- i.e., make my grammar produce scenes that look, as much as possible, like real scenes. This thesis refines those ideas into a complete tool set: a carefully constructed grammar formulation, which is co-designed with novel mixed-integer-programming scene parsing techniques; an approximate expectation-maximization parameter inference strategy; and tools for sampling scenes from a grammar under structure and pose constraints.
 
 ---
 
