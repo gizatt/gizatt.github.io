@@ -4,7 +4,7 @@ subtitle: Capturing distributions over environments to help robots and their des
 layout: page
 hide_hero: true
 show_sidebar: false
-card_image: assets/icra_2020.png
+card_image: assets/phd/dimsum_table.jpg
 card_image_alt: Project image.
 date: 20210829
 usemathjax: true
@@ -27,7 +27,7 @@ My PhD project focuses on figuring out the tooling to **capture a probability di
 <center><h2>Spatial Scene Grammars</h2></center>
 
 <center>
-<img src="{{site.baseurl}}/assets/phd/demo_rooms.gif" alt="Gif of diverse kitchens being generated" border="10" />
+<img src="{{site.baseurl}}/assets/phd/dimsum_tables_with_trees.gif" alt="Gif of diverse dimsum tables being generated." border="10" />
 </center>
 
 The above problem is almost absurdly broad; I'm exploring one of many possible avenues for tackling this problem. Specifically, I'm looking at using *scene grammars* as a representation for this distribution over worlds.
