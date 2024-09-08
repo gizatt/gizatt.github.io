@@ -16,7 +16,9 @@ usemathjax: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vb7klk2Z2rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-My PhD project focuses on figuring out the tooling to **capture a probability distribution $p(world)$ of real-world environments**. Capturing a distribution over worlds is, at its core, a hard problem because it involves capturing a distribution over a mixed discrete and continuous distribution: specifically, how many objects of a given type are in a scene, and where those objects are, covary with each other in complex ways. If we could capture this distribution, we could:
+Over the course of my PhD, I used simulation for many things, like testing Atlas' walking behaviors during the DRC; prototyping perception and control systems for the MIT Hyperloop vehicle before its test flight; or putting robot arm code used by my lab under CI. But simulation can be so much more than that -- in my PhD, I wrangled with some fundamental questions about how we can better align simulation to reality in a high-level way -- how we can capture the distribution of real worlds our robots will face, and reproduce that distribution in sim.
+
+My PhD project focused on figuring out the tooling to **capture a probability distribution $p(world)$ of real-world environments**. Capturing a distribution over worlds is, at its core, a hard problem because it involves capturing a distribution over a mixed discrete and continuous distribution: specifically, how many objects of a given type are in a scene, and where those objects are, covary with each other in complex ways. If we could capture this distribution, we could:
 
 1. **Sample from $p(world)$ to generate tons of diverse, realistic, interesting environments** to thoroughly test our perception and control algorithms in simulation (or for making game environments, or for quickly generating realistic backdrops in movies, etc...).
 
